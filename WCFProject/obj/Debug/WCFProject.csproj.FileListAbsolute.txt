@@ -1,0 +1,12 @@
+C:\Users\nafta_8c6up\source\repos\WCFProject\bin\Debug\WCFProject.dll.config
+C:\Users\nafta_8c6up\source\repos\WCFProject\bin\Debug\WCFProject.dll
+C:\Users\nafta_8c6up\source\repos\WCFProject\bin\Debug\WCFProject.pdb
+C:\Users\nafta_8c6up\source\repos\WCFProject\bin\Debug\EntityFramework.dll
+C:\Users\nafta_8c6up\source\repos\WCFProject\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nafta_8c6up\source\repos\WCFProject\bin\Debug\EntityFramework.xml
+C:\Users\nafta_8c6up\source\repos\WCFProject\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nafta_8c6up\source\repos\WCFProject\obj\Debug\WCFProject.csproj.AssemblyReference.cache
+C:\Users\nafta_8c6up\source\repos\WCFProject\obj\Debug\WCFProject.csproj.CoreCompileInputs.cache
+C:\Users\nafta_8c6up\source\repos\WCFProject\obj\Debug\WCFProject.csproj.CopyComplete
+C:\Users\nafta_8c6up\source\repos\WCFProject\obj\Debug\WCFProject.dll
+C:\Users\nafta_8c6up\source\repos\WCFProject\obj\Debug\WCFProject.pdb
