@@ -1,0 +1,8 @@
+C:\Users\nafta_8c6up\source\repos\TestsServices\bin\Debug\TestsServices.exe.config
+C:\Users\nafta_8c6up\source\repos\TestsServices\bin\Debug\TestsServices.exe
+C:\Users\nafta_8c6up\source\repos\TestsServices\bin\Debug\TestsServices.pdb
+C:\Users\nafta_8c6up\source\repos\TestsServices\obj\Debug\TestsServices.csproj.AssemblyReference.cache
+C:\Users\nafta_8c6up\source\repos\TestsServices\obj\Debug\TestsServices.csproj.SuggestedBindingRedirects.cache
+C:\Users\nafta_8c6up\source\repos\TestsServices\obj\Debug\TestsServices.csproj.CoreCompileInputs.cache
+C:\Users\nafta_8c6up\source\repos\TestsServices\obj\Debug\TestsServices.exe
+C:\Users\nafta_8c6up\source\repos\TestsServices\obj\Debug\TestsServices.pdb

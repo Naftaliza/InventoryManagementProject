@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="InventoryService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8000/InventoryService?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8000/InventoryService?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8000/InventoryService?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFProject" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IInventoryService_AddInventoryItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddInventoryItem" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryService_AddInventoryItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddInventoryItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryService_GetInventoryItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetInventoryItem" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryService_GetInventoryItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetInventoryItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryService_UpdateInventoryItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInventoryItem" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryService_UpdateInventoryItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateInventoryItemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryService_DeleteInventoryItem_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteInventoryItem" />
+  </wsdl:message>
+  <wsdl:message name="IInventoryService_DeleteInventoryItem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteInventoryItemResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IInventoryService">
+    <wsdl:operation name="AddInventoryItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryService/AddInventoryItem" message="tns:IInventoryService_AddInventoryItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryService/AddInventoryItemResponse" message="tns:IInventoryService_AddInventoryItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInventoryItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryService/GetInventoryItem" message="tns:IInventoryService_GetInventoryItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryService/GetInventoryItemResponse" message="tns:IInventoryService_GetInventoryItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInventoryItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryService/UpdateInventoryItem" message="tns:IInventoryService_UpdateInventoryItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryService/UpdateInventoryItemResponse" message="tns:IInventoryService_UpdateInventoryItem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInventoryItem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInventoryService/DeleteInventoryItem" message="tns:IInventoryService_DeleteInventoryItem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IInventoryService/DeleteInventoryItemResponse" message="tns:IInventoryService_DeleteInventoryItem_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IInventoryService" type="tns:IInventoryService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddInventoryItem">
+      <soap:operation soapAction="http://tempuri.org/IInventoryService/AddInventoryItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInventoryItem">
+      <soap:operation soapAction="http://tempuri.org/IInventoryService/GetInventoryItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateInventoryItem">
+      <soap:operation soapAction="http://tempuri.org/IInventoryService/UpdateInventoryItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteInventoryItem">
+      <soap:operation soapAction="http://tempuri.org/IInventoryService/DeleteInventoryItem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InventoryService">
+    <wsdl:port name="BasicHttpBinding_IInventoryService" binding="tns:BasicHttpBinding_IInventoryService">
+      <soap:address location="http://localhost:8000/InventoryService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
